@@ -25,10 +25,14 @@ public class Business implements Serializable {
         // Default constructor required for calls to DataSnapshot.getValue
     }
 
-    public Business(String bid, String name, String number){
+    public Business(String bid, String name, String number, String province, String address, String primary_business){
         this.bid = bid;
         this.name = name;
         this.number = number;
+        this.province = province;
+        this.address = address;
+        this.primary_business = primary_business;
+
     }
 
     @Exclude
