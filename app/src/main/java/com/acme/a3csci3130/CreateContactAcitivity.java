@@ -19,9 +19,9 @@ public class CreateContactAcitivity extends Activity {
         //Get the app wide shared variables
         appState = ((MyApplicationData) getApplicationContext());
 
-        submitButton = (Button) findViewById(R.id.Button_createBusiness);
+        submitButton = (Button) findViewById(R.id.createButton);
         nameField = (EditText) findViewById(R.id.name);
-        emailField = (EditText) findViewById(R.id.email);
+        emailField = (EditText) findViewById(R.id.province);
     }
 
     public void submitInfoButton(View v) {
