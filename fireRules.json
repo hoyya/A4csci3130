@@ -2,14 +2,27 @@
   "rules": {
     ".read": "true",
     ".write": "true",
-    "contacts": {
-            "$contact": {
+    "businesses": {
+            "$business": {
                 "name": {
-                    ".validate": "newData.isString() && newData.val().length < 50"
+                  ".validate": "newData.isString() && newData.val().length < 49 && newData.val().length > 1"
                 },
-                "email": {
-                    ".validate": "newData.isString() && newData.val().matches(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}$/i)"
+                //"email": {
+                //    ".validate": "newData.isString() && newData.val().matches(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}$/i)"
+                // },
+                "number": {
+                  ".validate": "newData.val().length == 9 && newData.isString()"
+                },
+                "address": {
+                  ".validate": "newData.val().length < 50"
+                },
+                "province": {
+                  ".validate": "newData.val().equals(\"AB\") ||newData.val().equals(\"BC\") ||newData.val().equals(\"MB\") ||newData.val().equals(\"NB\") ||newData.val().equals(\"NL\") ||newData.val().equals(\"NS\") ||newData.val().equals(\"NT\") ||newData.val().equals(\"NU\") ||newData.val().equals(\"ON\") ||newData.val().equals(\"PE\") ||newData.val().equals(\"QC\") ||newData.val().equals(\"SK\") || newData.val().equals(\"YT\") || newData.val().equals(\"\")"
+                },
+                "primary_business": {
+                  ".validate": "newData.val().equals(\"Fisher\") || newData.val().equals(\"Distributor\") || newData.val().equals(\"Processor\") || newData.val().equals(\"Fish Monger\")"
                 }
+
             }
         }
   }
