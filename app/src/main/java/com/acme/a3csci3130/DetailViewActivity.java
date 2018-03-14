@@ -15,7 +15,7 @@ public class DetailViewActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_view);
-        receivedPersonInfo = (Business)getIntent().getSerializableExtra("Contact");
+        receivedPersonInfo = (Business)getIntent().getSerializableExtra("Business");
 
         nameField = (EditText) findViewById(R.id.name);
         emailField = (EditText) findViewById(R.id.email);
