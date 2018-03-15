@@ -14,6 +14,8 @@ import java.util.Map;
 
 public class Business implements Serializable {
 
+
+
     public  String bid;
     public  String name;
     public  String number;
@@ -59,4 +61,53 @@ public class Business implements Serializable {
                 this.bid + "\n");
 
     }
+
+    public String getBid() {
+        return bid;
+    }
+
+    public void setBid(String bid) {
+        this.bid = bid;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public String getProvince() {
+        return province;
+    }
+
+    public void setProvince(String province) {
+        this.province = province;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getPrimary_business() {
+        return primary_business;
+    }
+
+    public void setPrimary_business(String primary_business) {
+        this.primary_business = primary_business;
+    }
+
 }
