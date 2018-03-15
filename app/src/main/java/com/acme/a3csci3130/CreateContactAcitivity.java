@@ -27,6 +27,8 @@ public class CreateContactAcitivity extends Activity {
         addressField = (EditText) findViewById(R.id.address);
 
 
+
+
     }
 
     public void submitInfoButton(View v) {

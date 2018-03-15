@@ -55,12 +55,16 @@ public class DetailViewActivity extends Activity {
 
         appState.firebaseReference.child(receivedPersonInfo.bid).setValue(receivedPersonInfo);
 
-
+        finish();
 
     }
 
     public void eraseBusiness(View v)
     {
         //TODO: Erase contact functionality
+
+        appState.firebaseReference.child(receivedPersonInfo.bid).removeValue();
+        finish();
+
     }
 }
