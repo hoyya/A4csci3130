@@ -25,10 +25,9 @@ public class Business implements Serializable {
         // Default constructor required for calls to DataSnapshot.getValue
     }
 
-    public Business(String bid, String name, String number, String province, String address, String primary_business){
+    public Business(String bid, String name, String province, String address, String primary_business){
         this.bid = bid;
         this.name = name;
-        this.number = number;
         this.province = province;
         this.address = address;
         this.primary_business = primary_business;
@@ -40,7 +39,12 @@ public class Business implements Serializable {
         HashMap<String, Object> result = new HashMap<>();
         result.put("bid", bid);
         result.put("name", name);
-        result.put("number", number);
+        result.put("province", province);
+        result.put("address", address);
+        result.put("primary business", primary_business);
+
+
+
 
         return result;
     }

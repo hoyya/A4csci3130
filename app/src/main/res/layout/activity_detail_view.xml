@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="184dp"
-        android:onClick="updateContact"
+        android:onClick="updateBusiness"
         android:text="Update Data"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/province" />
@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="24dp"
         android:layout_marginTop="188dp"
-        android:onClick="eraseContact"
+        android:onClick="eraseBusiness"
         android:text="Erase Contact"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/province" />
