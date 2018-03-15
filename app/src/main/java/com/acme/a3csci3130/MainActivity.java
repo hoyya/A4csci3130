@@ -61,7 +61,7 @@ public class MainActivity extends Activity {
     private void showDetailView(Business person)
     {
         Intent intent = new Intent(this, DetailViewActivity.class);
-        intent.putExtra("Contact", person);
+        intent.putExtra("new_business", person);
         startActivity(intent);
     }
 
