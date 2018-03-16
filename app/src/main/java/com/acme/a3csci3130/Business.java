@@ -16,9 +16,9 @@ public class Business implements Serializable {
 
 
 
-    public  String bid;
-    public  String name;
-    public  String number;
+    public String bid;
+    public String name;
+    public String number;
     public String province;
     public String address;
     public String primary_business;
